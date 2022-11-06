@@ -1,0 +1,48 @@
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe4d4;
+    padding: 30px 80px;
+}
+
+.navbar-logo{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -4px;
+    text-decoration: none;
+    color: #f85c8c;
+}
+
+.navbar-div-links{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link{
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.navbar-div-kundportal{
+    display: flex;
+    align-items: center;
+    background-color: #f85c8c;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.navbar-kundportal{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 800px){
+    .navbar-link{
+        display: none;
+    }
+}
+

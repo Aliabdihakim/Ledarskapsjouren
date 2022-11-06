@@ -1,0 +1,39 @@
+.review-div{
+    display: flex;
+    background-color: white;
+    margin: 80px 120px 30px 120px;
+    padding: 40px 60px;
+    box-shadow: 0 0 20px;
+}
+
+.reviewitem-div {
+    flex: 1 1 1;
+  }
+
+.review-customer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-kund-header{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.checked{
+    color: #f85c8c;
+}
+
+.review-satisfaction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-progressbar{
+height: 10px;
+background-color: #f85c8c;
+border-radius: 20px;
+}
