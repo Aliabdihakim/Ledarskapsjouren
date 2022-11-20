@@ -1,0 +1,48 @@
+ /*<---------- SECTION 1 ---------->*/
+
+.section1-expert{
+    background-color: #ffe4d4;
+    padding: 100px 100px;
+}
+
+.experts-section1-title{
+    margin: 0;
+}
+
+.experts-section1-text{
+    padding: 0 200px;
+}
+
+.experts-icon-div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-top: 100px;
+}
+
+.expert-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expert-icon-img{
+    width: 70px;
+}
+
+.expert-icon-text{
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0 50px;
+}
+
+ /*<---------- SECTION 2 ---------->*/
+
+ .section2-experts-div{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: start;
+ }
+
+ .experts-section2-img{
+    width: 600px;
+ }
