@@ -1,0 +1,39 @@
+.section2-experts-div{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: start;
+ }
+
+ .experts-section2-img{
+    width: 600px;
+ }
+
+ .expert-profile-text{
+    padding-right: 200px;
+    line-height: 2;   
+}
+
+
+ @media screen and (max-width: 1000px){
+  .section2-experts-div{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-items: start;
+ }
+
+  .experts-section2-img{
+    width: 100%;
+  }
+
+  .expert-profile-text-div{
+    text-align: center;
+  }
+
+  .expert-profile-text{
+    padding: 0 20px;
+    line-height: 2;   
+}
+
+
+  
+ }

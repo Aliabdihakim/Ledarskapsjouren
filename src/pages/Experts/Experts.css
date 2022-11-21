@@ -35,17 +35,32 @@
     padding: 0 50px;
 }
 
+@media screen and (max-width: 1000px){
+  .experts-icon-div{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding-top: 100px;
+}
+
+.experts-section1-text{
+  padding: 0 20px;
+}
+
+  .section1-expert{
+    background-color: #ffe4d4;
+    padding: 100px 5px;
+  }
+
+  .expert-icon-text{
+    padding: 0 20px;
+}
+
+
+
+}
+
  /*<---------- SECTION 2 ---------->*/
 
- .section2-experts-div{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    justify-items: start;
- }
-
- .experts-section2-img{
-    width: 600px;
- }
 
  /*<---------- SECTION 3 ---------->*/
 
@@ -105,3 +120,57 @@
     padding: 0 100px;
     line-height: 2;
   }
+
+
+    /*<---------- SECTION 5 ---------->*/
+
+
+.expert-add-form-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f45f8c70;;
+}
+
+.expert-add-form{
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  padding: 20px 40px;
+  background-color: white;
+  margin: 50px;
+}
+
+.expert-form-label{
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: black;
+}
+
+.expert-form-row{
+  display: flex;
+}
+
+.expert-form-single{
+  padding: 10px;
+}
+
+.expert-input{
+  padding: 10px 20px;
+  border: 1px solid rgba(72, 71, 71, 0.343);
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.084);
+}
+
+.expert-form-button{
+  border-style: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: #f45f8c;
+  padding: 10px 30px;
+  margin: 10px;
+}

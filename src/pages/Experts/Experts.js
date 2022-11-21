@@ -9,8 +9,21 @@ const Experts = () => {
         firstName:"",
         lastName:"",
         email:"",
+        phone:"",
         more:"",
     })
+    
+
+    const handleChange = (e) => {
+        setAddExpert(prev => {
+            return({
+                ...prev,
+                [e.target.name]:e.target.value
+            })
+        })
+    }
+
+    console.log(addExpert);
 
   return (
     <div>
@@ -108,14 +121,79 @@ const Experts = () => {
 
         {/*<---------- SECTION 5 ---------->*/}
 
-        <section>
-            <form>
-                <input 
-                name="firstName"
-                
-                />
+        <section className='expert-add-form-section'>
+            <form className='expert-add-form'>
+                <h1>Gå med som expert</h1>
+                <p>
+                Fyll i detta formulär så kontaktar vi dig för att prata om din ansökan
+                </p>
 
+                <div className='expert-form-row'>
+                    <div className='expert-form-single'>
+                        <p><label className='expert-form-label' htmlFor='firstName'>Förnamn</label></p>
+                        <input 
+                        className='expert-input'
+                        id="firstName"
+                        name="firstName"
+                        value={addExpert.firstName}
+                        onChange={handleChange}
+                        height="1000px"
+                        />
+                    </div>
+
+                    <div className='expert-form-single'>
+                        <p><label className='expert-form-label' htmlFor='lastName'>Efternamn</label></p>
+                        <input 
+                        className='expert-input'
+                        id="lastName"
+                        name="lastName"
+                        value={addExpert.lastName}
+                        onChange={handleChange}
+                        />
+                    </div>
+                </div>
+
+                <div className='expert-form-row'>
+                    <div className='expert-form-single'>
+                        <p><label className='expert-form-label' htmlFor='email'>Epost</label></p>
+                        <input 
+                        className='expert-input'
+                        id="email"
+                        type="email"
+                        name="email"
+                        value={addExpert.email}
+                        onChange={handleChange}
+                        />
+                    </div>
+
+                    <div className='expert-form-single'>
+                        <p><label className='expert-form-label' htmlFor='phone'>Telefon</label></p>
+                        <input 
+                        className='expert-input'
+                        id="phone"
+                        type="number"
+                        name="phone"
+                        value={addExpert.phone}
+                        onChange={handleChange}
+                        />
+                    </div>
+                </div>
+
+                <div className='expert-form-single'>
+                    <p><label className='expert-form-label' htmlFor='more'>Mer om dig</label></p>
+                    <input 
+                    className='expert-input'
+                    id="more"
+                    name="more"
+                    value={addExpert.more}
+                    onChange={handleChange}
+                    size="55"
+                    style={{padding:"60px 0"}}
+                    />
+                </div>
+                <button className='expert-form-button'>Skicka</button>
             </form>
+
         </section>
 
     </div>
