@@ -46,3 +46,62 @@
  .experts-section2-img{
     width: 600px;
  }
+
+ /*<---------- SECTION 3 ---------->*/
+
+ .expert-section3{
+    height: 90vh;
+    background-color: #ffe4d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .expert3-title{
+    color: #f45f8c;
+    font-size: 2rem;
+ }
+
+ .expert3-button{
+    background-color: white;
+    border-style: none;
+    color: #f45f8c;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 5px;
+    margin: 10px;
+ }
+
+  /*<---------- SECTION 4 ---------->*/
+
+  .expert4-div{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  .expert4-img-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #f45f8c70;
+    border-radius: 1000px;
+  }
+
+
+  .expert4-img{
+    display: flex;
+  }
+
+
+  .expert4-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 100px;
+    line-height: 2;
+  }
