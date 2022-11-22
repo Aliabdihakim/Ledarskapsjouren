@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Experts.css"
 import ExpertProfile from '../../components/ExpertProfile/ExpertProfile'
 import expertData from './expertData'
+import { useMediaQuery } from 'react-responsive'
 
 const Experts = () => {
 
@@ -12,6 +13,7 @@ const Experts = () => {
         phone:"",
         more:"",
     })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1000px)' })
     
 
     const handleChange = (e) => {
@@ -77,9 +79,6 @@ const Experts = () => {
         {/*<---------- SECTION 3 ---------->*/}
 
         <section className='expert-section3'>
-            <div>
-
-            </div>
             <h1 className='expert3-title'>Vill du bli expert hos Ledarskapsjouren?</h1>
             <div className='expert3-buttons'>
                 <button className='expert3-button'>Läs mer</button>
@@ -106,6 +105,9 @@ const Experts = () => {
             </div>
 
             <div className='expert4-div'>
+                {isTabletOrMobile && <div className='expert4-img-div' style={{backgroundColor:"#ffe4d4"}}>
+                    <img className='expert4-img' src={require('../../assets/expert-info2.png')} style={{borderColor:"white"}}/>
+                </div>}
                 <div className='expert4-info'>
                     <h2>Helt flexibelt</h2>
                     <p className=''>
@@ -113,9 +115,9 @@ const Experts = () => {
                     </p>
                     <button className='expert3-button' style={{backgroundColor:"#f45f8c",color:"white"}}>Ansök</button>
                 </div>
-                <div className='expert4-img-div' style={{backgroundColor:"#ffe4d4"}}>
+                {!isTabletOrMobile && <div className='expert4-img-div' style={{backgroundColor:"#ffe4d4"}}>
                     <img className='expert4-img' src={require('../../assets/expert-info2.png')} style={{borderColor:"white"}}/>
-                </div>
+                </div>}
             </div>
         </section>
 

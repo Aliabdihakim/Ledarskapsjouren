@@ -90,6 +90,23 @@
     margin: 10px;
  }
 
+ @media screen and (max-width: 1000px){
+  .expert-section3{
+    height: 90vh;
+    background-color: #ffe4d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .expert3-title{
+  color: #f45f8c;
+  font-size: 2rem;
+  text-align: center;
+}
+
+ }
   /*<---------- SECTION 4 ---------->*/
 
   .expert4-div{
@@ -119,6 +136,48 @@
     align-items: start;
     padding: 0 100px;
     line-height: 2;
+  }
+
+  @media screen and (max-width: 1000px){
+    .expert4-div{
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0,1fr));
+      align-items: center;
+      justify-items: center;
+      padding: 10px 0;
+    }
+
+    .expert4-img-div{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      background-color: #f45f8c70;
+      border-radius: 1000px;
+      justify-content: center;
+    }
+
+    .expert4-img{
+      display: flex;
+      width: 50%;
+    }
+
+    .expert4-info{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 0 100px;
+      line-height: 2;
+      text-align: center;
+    }
+
+    .expert4-info > h2{
+      align-self: center;
+    }
+
+    .expert4-info > button{
+      align-self: center;
+      margin-bottom: 50px;
+    }
   }
 
 
